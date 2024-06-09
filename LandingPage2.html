@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      box-sizing: border-box;
+      
+      
+    }
+    body navbar{
+      margin: 10px;
+    }
+    navbar h2{
+      
+      color: rgb(3, 77, 3);
+      text-align: center;
+      font-weight: 100px;
+      font-style: italic;
+    
+    }
+   html,body{
+    width: 100%;
+    height: 100%;
+   }
+   #main{
+    width: 100%;
+    height: 100vh;
+   }
+   .top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8-5WaitnlygL09To4qEehKq1GmR--2M-Rw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    
+   }
+   .top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+   }
+   .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding:0 10vh;
+    color: #fff;
+    bottom: 5%;
+   }
+   .text h1{
+    font-weight: 600;
+    font-size: 4vw;
+   }
+   .text .image{
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;
+   }
+   .rtext{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .text p{
+    font-size: 20px;
+   }
+   .bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+   }
+   .b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P6NXXaTNceDOQ8zDXusoLitLlqJkPaP7rQ&s);
+    background-size: cover;
+    background-position: center;
+   }
+   .b1 h1{
+    text-align: center;
+    padding: 30px;
+   }
+   .b1 p{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+
+   }
+   .b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+   }
+   .b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTWetJCBQ1ukKQvLZ-1FPgrKQeaPza9FFmA&s);
+    background-size: cover;
+    background-position: center;
+   }
+   .b2 .up h1{
+    text-align: center;
+    padding: 30px;
+    
+   }
+   .b2 .up p{
+    color: #fff;
+    text-align: center;
+    padding: 15%;
+   }
+   .b2 .down h1{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCV-IgFQJcLKGexvncGa3ToV356RXeHPzIMw&s);
+    background-size: cover;
+    background-position: center;
+  }
+  .b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+   }
+   .b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnFn7BcyYb5-YrdirBqy9t_poqPluAIB4IhA&s);
+    background-size: cover;
+    background-position: center;
+   }
+   .b3 .overlay{
+     justify-content: right;
+     position: relative;
+     margin-left: 50%;
+     width: 50%;
+     height: 100%;
+     padding: 4vh 3vh;
+   }
+   .b3 .overlay p{
+    padding: 1.2vh;
+   }
+   @media(max-width: 700px){
+    .rtext{
+      flex-direction: column;
+      margin-left: 40px;
+      
+    }
+    .b3 .overlay{
+      width: 100%;
+      margin-left: initial;
+    }
+   }
+   @media(max-width:500px){
+    .text{
+      flex-direction: columns;
+      align-items: flex;
+    }
+    .text h1{
+     font-size: 5vh;
+    }
+    .text .image{
+      height: 200px;
+      width: 140px;
+    }
+    .rtext{
+      flex-direction: column;
+     
+    }
+    .icons{
+     margin-top: 10px;
+    }
+    .bottom{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .b1{
+      width: 100%;
+    }
+    .b2{
+      width: 100%;
+      min-height: 30vh;
+    }
+    .b2 up{
+      min-height: 30vh;
+    }
+    .b3{
+      width: 100%;
+      background-position: left;
+      min-height: 30vh;
+    }
+   }
+   body{
+    color: #fff;
+    background-color: chartreuse;
+   }
+   body .btm{
+    color: #000;
+   }
+  h3 {
+    text-align: center;
+  }
+   
+
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"
+/>
+</head>
+<body>
+  <navbar>
+    <h2>Welcome to the forest world!</h2>
+  </navbar>
+  <div id="main">
+    <div class="top">
+      <div class="overlay">
+        <div class="text">
+          <h1>@Forests..</h1>
+          <div class="image"></div>
+          <div class="rtext">
+            <p>Grassland</p>
+            <p>Moutain forest</p>
+            <p>Shrub forest</p>
+            <p>Tropical evergreen forest</p>
+
+        </div>
+            <div class="icons">
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-instagram-fill"></i>
+             </div>
+          </div>
+         
+      </div>
+
+    </div>
+    <div class="bottom">
+      <div class="b1">
+       <h1>Popular forests</h1> 
+       <p>You can visit various types of forest  yourself or you can take help of giudes who will mentor you or giude you a to z. </p>
+      </div>
+      <div class="b2">
+        <div class="up">
+          <h1>Save Forest Save Yourself</h1>
+          <p>We provide you a safe forest tourship.
+            If you are intersted to learn more about forests w'll also provide  helpful guides for your querries.
+          </p>
+        </div>
+        <div class="down">
+          <div class="overlay">
+            <h1>more..</h1>
+          </div>
+          
+        </div>
+      </div>
+      <div class="b3">
+        <div class="overlay">
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <p>About Us</p>
+          <p>Contact us</p>
+        </div>
+      </div>
+    </div>
+    <div class="btm"><p>Forests are most important for us.They are very friendly. They gives us various types of services like(Oxygen, medicines, weather balancing, types of wood materials, etc) but we are like cheaters cheat them  & obey the deforestation. But we don't know this is not harming the trees or forests only. It will bring a vast diseaster for human beings.  <br>
+      So please love forests & trees and Save yourself or your next generation!<br><h3>Thanks to visit!</h3>
+    </p></div>
+   
+  </div>
+  
+  
+</body>
+</html>
